@@ -6,13 +6,14 @@ const sayHello = (name = "テスト") => console.log(`こんにちは${name}さ�
 sayHello("誠");
 
 //スプレッド構文
-const arr1 = [1, 2];
-console.log(arr1);
+const arr1 = [1, 2, 3, 4, 5];
+// console.log(arr1);
 
 // console.log(...arr1);
 
 const sumFunc = (num1, num2) => console.log(num1 + num2);
-sumFunc(arr1[0], arr1[1]);
+sumFunc(arr1[4], arr1[3]);
+//スプレッド構文で引数で渡す
 sumFunc(...arr1);
 
 //id=appの子要素にボタンタグを生成し、ボタンを押したらクリックイベントでpタグを生成し、pタグのinnerTextを誠にする
